@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sobre — Projeto 3º Bimestre</title>
+    <meta name="description" content="Sobre o projeto: especificações e objetivos." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Ir para o conteúdo</a>
+    <header class="site-header">
+      <div class="wrap">
+        <h1 class="logo">Guia Web — Projeto</h1>
+        <nav aria-label="Navegação principal">
+          <ul class="nav">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="wrap content">
+        <h2>Especificações</h2>
+        <div class="tabs" data-tabs>
+          <div role="tablist" class="tab-list" aria-label="Seções">
+            <button class="tab" role="tab" data-tab="overview" aria-selected="true">Visão geral</button>
+            <button class="tab" role="tab" data-tab="tech" aria-selected="false">Tecnologias</button>
+            <button class="tab" role="tab" data-tab="goals" aria-selected="false">Objetivos</button>
+          </div>
+          <div class="tab-panel active" id="overview" role="tabpanel">
+            <ul>
+              <li>HTML semântico e acessível</li>
+              <li>Design responsivo (desktop/tablet/telefone)</li>
+            </ul>
+          </div>
+          <div class="tab-panel" id="tech" role="tabpanel">
+            <ul>
+              <li>HTML5, CSS3, JavaScript (ES6+)</li>
+              <li>Uso de localStorage para persistência simples</li>
+            </ul>
+          </div>
+          <div class="tab-panel" id="goals" role="tabpanel">
+            <p>Objetivo: criar uma página acessível, responsiva e fácil de manter.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>Aluno: Antonio Leoni — Projeto 3º Bimestre</p>
+        <small>Feito com HTML, CSS e JavaScript</small>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

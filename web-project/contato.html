@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contato — Projeto 3º Bimestre</title>
+    <meta name="description" content="Formulário de contato e mensagens salvas." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Ir para o conteúdo</a>
+    <header class="site-header">
+      <div class="wrap">
+        <h1 class="logo">Guia Web — Projeto</h1>
+        <nav aria-label="Navegação principal">
+          <ul class="nav">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="wrap content form-section" aria-labelledby="contatoTitle">
+        <h2 id="contatoTitle">Contato</h2>
+        <div class="tabs" data-tabs>
+          <div role="tablist" class="tab-list" aria-label="Contato opções">
+            <button class="tab" role="tab" data-tab="form" aria-selected="true">Formulário</button>
+            <button class="tab" role="tab" data-tab="messages" aria-selected="false">Mensagens</button>
+          </div>
+
+          <div class="tab-panel active" id="form" role="tabpanel">
+            <form id="contactForm" novalidate>
+              <div class="field">
+                <label for="name">Nome</label>
+                <input id="name" name="name" type="text" required minlength="2" />
+                <small class="error" aria-live="polite"></small>
+              </div>
+
+              <div class="field">
+                <label for="email">E‑mail</label>
+                <input id="email" name="email" type="email" required />
+                <small class="error" aria-live="polite"></small>
+              </div>
+
+              <div class="field">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <small class="error" aria-live="polite"></small>
+              </div>
+
+              <div class="actions">
+                <button type="submit" class="btn">Enviar</button>
+                <button type="button" id="clearStorage">Limpar mensagens</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="tab-panel" id="messages" role="tabpanel">
+            <aside class="submissions">
+              <h4>Mensagens salvas</h4>
+              <ul id="messagesList" aria-live="polite"></ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>Aluno: Antonio Leoni — Projeto 3º Bimestre</p>
+        <small>Feito com HTML, CSS e JavaScript</small>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

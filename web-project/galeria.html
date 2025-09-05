@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galeria — Projeto 3º Bimestre</title>
+    <meta name="description" content="Galeria de imagens do projeto." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Ir para o conteúdo</a>
+    <header class="site-header">
+      <div class="wrap">
+        <h1 class="logo">Guia Web — Projeto</h1>
+        <nav aria-label="Navegação principal">
+          <ul class="nav">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="wrap gallery-section">
+        <h2>Galeria</h2>
+        <div class="tabs" data-tabs>
+          <div role="tablist" class="tab-list" aria-label="Ver">
+            <button class="tab" role="tab" data-tab="images" aria-selected="true">Imagens</button>
+            <button class="tab" role="tab" data-tab="list" aria-selected="false">Lista</button>
+          </div>
+          <div class="tab-panel active" id="images" role="tabpanel">
+            <div class="gallery" aria-live="polite">
+              <div class="slide" data-index="0"><img src="https://via.placeholder.com/800x450?text=Imagem+1" alt="Exemplo imagem 1"/></div>
+              <div class="slide" data-index="1"><img src="https://via.placeholder.com/800x450?text=Imagem+2" alt="Exemplo imagem 2"/></div>
+              <div class="slide" data-index="2"><img src="https://via.placeholder.com/800x450?text=Imagem+3" alt="Exemplo imagem 3"/></div>
+            </div>
+            <div class="gallery-controls">
+              <button id="prev">Anterior</button>
+              <button id="next">Próxima</button>
+            </div>
+          </div>
+          <div class="tab-panel" id="list" role="tabpanel">
+            <ul>
+              <li>Imagem 1 — exemplo</li>
+              <li>Imagem 2 — exemplo</li>
+              <li>Imagem 3 — exemplo</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>Aluno: Antonio Leoni — Projeto 3º Bimestre</p>
+        <small>Feito com HTML, CSS e JavaScript</small>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
